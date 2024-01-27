@@ -9,7 +9,7 @@ function App() {
     <div>
       {/*<ToDo/>*/}
       {/*/!*<CoinTracker/>*!/*/}
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/movie/:id" element={<Detail/>}/>
           <Route path="/" element={<Home/>}/>
